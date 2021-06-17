@@ -1,43 +1,83 @@
 import React from "react";
-import { Navbar, Nav,Container } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import logo from "../image/logo01.png";
-import "./Style.css";
+import { Link } from "react-scroll";
+import "./CSS/Navbar.css";
+import { useState,useEffect } from "react";
 
-const Header = (props) => {
-  console.log(props);
+const Menubar = () => {
+  const [navColor, setNavColor] = useState(" ");
+
+  const changeNav = () => {
+    if (window.scrollY>0 ) {
+      setNavColor("dark");
+    } else{
+      setNavColor("transparent");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  // console.log(navColor);
+
   return (
-    <div className="position-sticky navbar" >
-      <Navbar bg="transparent" expand="lg">
-        <img
-          src={logo}
-          width="100"
-          height="80"
-          className="d-inline-block align-top"
-          alt="logo"
-        />
-
+    <div className="sticky-top">
+      <Navbar bg={navColor} expand="lg" className="navigation nav-active">
+        <Navbar.Brand>
+          <img
+            src={logo}
+            alt="logo"
+            width="100"
+            height="80"
+            className="d-inline-block align-top"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link className="link-menu">Home</Nav.Link>
-
-            <Nav.Link className="link-menu">About</Nav.Link>
-
-            <Nav.Link className="link-menu">Skills</Nav.Link>
-
-            <Nav.Link className="link-menu">Portfolio</Nav.Link>
-
-            <Nav.Link className="link-menu">Education</Nav.Link>
-
-            <Nav.Link className="link-menu">Blogs</Nav.Link>
-
-            <Nav.Link className="link-menu">Contact</Nav.Link>
+            <Link
+              to="header"
+              activeClass="active"
+              className="link-menu"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-95}
+            >
+              Home
+            </Link>
+            <Link
+              to="about"
+              className="link-menu"
+              activeClass="active"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-95}
+            >
+              About
+            </Link>
+            <Link
+              to="skill"
+              className="link-menu"
+              activeClass="active"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-95}
+            >
+              Skill
+            </Link>
           </Nav>
         </Navbar.Collapse>
-      
       </Navbar>
     </div>
   );
 };
 
-export default Header;
+export default Menubar;

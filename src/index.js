@@ -7,9 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
  //import './bootstrap.min.css'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 
