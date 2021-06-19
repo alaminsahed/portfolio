@@ -28,6 +28,7 @@ const HeaderMain = () => {
               <h4>Front-end Developer</h4>
             </div>
           </Fade>
+          <Fade left cascade>
           <div className="social-media">
             <a href="https://www.linkedin.com/in/md-al-amin-sahed/">
               <FontAwesomeIcon icon={["fab", "linkedin"]} className="icon" />
@@ -42,6 +43,7 @@ const HeaderMain = () => {
               <FontAwesomeIcon icon={["fas", "envelope"]} className="icon" />
             </a>
           </div>
+          </Fade>
         </div>
       </Parallax>
     </div>
