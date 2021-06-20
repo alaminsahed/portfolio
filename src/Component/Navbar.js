@@ -73,6 +73,18 @@ const Menubar = () => {
             >
               Skill
             </Link>
+            <Link
+            to="projects"
+            className="link-menu"
+            activeClass="active"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-95}
+          >
+            Portfolio
+          </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -49,18 +49,21 @@ const About = () => {
                   title="Education"
                   className="about-link"
                 >
+                <Slide bottom>
                   <div>
                     <h2>B.Sc. in Computer Science and Engineering.</h2>
                     <h4>Southeast University, Bangladesh</h4>
                     <p>CGPA: 3.64</p>
                     <small>Passing Year: 2021</small>
                   </div>
+                  </Slide>
                 </Tab>
                 <Tab
                   eventKey="certification"
                   title="Certification"
                   className="about-link"
                 >
+                <Slide bottom>
                   <div>
                     <a href="https://www.sololearn.com/certificates/course/en/18915388/1024/landscape/png">
                       <h4>Javascript</h4>
@@ -74,6 +77,7 @@ const About = () => {
                     </a>
                     <small>SoloLearn</small>
                   </div>
+                  </Slide>
                 </Tab>
               </Tabs>
             </div>
@@ -88,7 +92,9 @@ const About = () => {
             </div>
           </Col>
           <Col xs sm={12} lg md={5} className="my-photo">
+          <Fade right>
           <img src={me} alt="my" />
+          </Fade>
           </Col>
         </Row>
       </Container>
