@@ -18,14 +18,18 @@ const Projects = () => {
         </div>
         <div className="project-body">
          <div className="project-tab ">
-         <Tabs defaultActiveKey="profile" variant="pills" className="justify-content-center">
-            <Tab eventKey="home" title="Home">
-            
+         <Tabs defaultActiveKey="all" variant="pills" className="justify-content-center">
+            <Tab eventKey="all" title="All">
+            <Row>
+              <Col>
+              
+              </Col>  
+            </Row>
             </Tab>
-            <Tab eventKey="profile" title="Profile">
+            <Tab eventKey="frontend" title="Front-end">
              
             </Tab>
-            <Tab eventKey="contact" title="Contact">
+            <Tab eventKey="fullstack" title="Full-Stack">
             
             </Tab>
           </Tabs>
