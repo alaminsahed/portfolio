@@ -5,7 +5,7 @@ import img4 from "../image/project/e.PNG";
 import img5 from "../image/project/c.PNG";
 import img6 from "../image/project/t.PNG";
 
-export default projectData = [{
+ const projectData = [{
     id: 1,
     name: "Online Shopping System",
     des: "Buying and selling product through this website",
@@ -65,3 +65,5 @@ export default projectData = [{
     git:"https://github.com/alaminsahed/Todo-with-redux-toolkit",
     topic: "frontend"
 }]
+
+export default projectData;

@@ -1,7 +1,9 @@
 import React from "react";
 import "./CSS/Projects.css";
-import { Container, Row, Col,Tabs, Tab } from "react-bootstrap";
+import { Container, Row, Col, Tabs, Tab, Card } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
+import data from "../Data/projectData";
+import ProjectDetails from "./PojectDetails";
 
 const Projects = () => {
   return (
@@ -17,24 +19,25 @@ const Projects = () => {
           </Fade>
         </div>
         <div className="project-body">
-         <div className="project-tab ">
-         <Tabs defaultActiveKey="all" variant="pills" className="justify-content-center">
-            <Tab eventKey="all" title="All">
-            <Row>
-              <Col>
-              
-              </Col>  
-            </Row>
-            </Tab>
-            <Tab eventKey="frontend" title="Front-end">
-             
-            </Tab>
-            <Tab eventKey="fullstack" title="Full-Stack">
-            
-            </Tab>
-          </Tabs>
-
-         </div>
+          <div className="project-tab ">
+            <Tabs
+              defaultActiveKey="all"
+              variant="pills"
+              className="justify-content-center"
+            >
+              <Tab eventKey="all" title="All">
+                <Row>
+                  {data.map((info) => (
+                  <Col md={6}>
+                      <ProjectDetails key={info.id} info={info} />
+                      </Col>
+                  ))}
+                </Row>
+              </Tab>
+              <Tab eventKey="frontend" title="Front-end"></Tab>
+              <Tab eventKey="fullstack" title="Full-Stack"></Tab>
+            </Tabs>
+          </div>
         </div>
       </Container>
     </div>
