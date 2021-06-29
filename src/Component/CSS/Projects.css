@@ -1,5 +1,11 @@
-.projects{
-    height: 40rem;
-    width: 100%;
-    /* background-color: slateblue; */
+.projects {
+  height: 80rem;
+  width: 100%;
+  background-color: white;
+  padding: 110px 0 90px;
+}
+
+.project-body {
+  margin-top: 10px ;
+  /* margin-left: 27rem; */
 }
