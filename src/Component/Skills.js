@@ -41,67 +41,71 @@ const Skills = () => {
         <div className="skills stack-icon">
           <Row  data-aos="fade-right">
             <Col>
-              <FontAwesomeIcon icon={["fab", "html5"]} size="7x" />
+              <FontAwesomeIcon icon={["fab", "html5"]} size="5x" />
               <br />
               <small className="icon-name">HTML</small>
             </Col>
 
             <Col>
-              <FontAwesomeIcon icon={["fab", "css3-alt"]} size="7x" />
+              <FontAwesomeIcon icon={["fab", "css3-alt"]} size="5x" />
               <br />
               <small>CSS</small>
             </Col>
 
             <Col>
-              <FontAwesomeIcon icon={["fab", "bootstrap"]} size="7x" />
+              <FontAwesomeIcon icon={["fab", "bootstrap"]} size="5x" />
               <br />
               <small>CSS</small>
             </Col>
             <Col>
-              <FontAwesomeIcon icon={["fab", "js-square"]} size="7x" />
+              <FontAwesomeIcon icon={["fab", "js-square"]} size="5x" />
               <br />
               <small>JavaScript</small>
             </Col>
-            <Col>
-              <FontAwesomeIcon icon={["fab", "react"]} size="7x" />
+          </Row>
+          <br /> <br />
+          <Row>
+          <Col>
+              <FontAwesomeIcon icon={["fab", "react"]} size="5x" />
               <br />
               <small>React.js</small>
             </Col>
             <Col>
-              <img src={redux} alt="redux" height="120px" width="150px" />
+              <img src={redux} alt="redux" height="100px" width="120px" />
               <br />
               <small>Redux</small>
             </Col>
-          </Row>
-          <br /> <br />
-          <Row data-aos="fade-left" data-aos-delay="100">
             <Col>
-              <FontAwesomeIcon icon={["fab", "node"]} size="7x" />
+              <FontAwesomeIcon icon={["fab", "node"]} size="5x" />
               <br />
               <small>Node.js</small>
             </Col>
             <Col>
-              <img src={express} alt="express" height="120px" width="150px" />
+              <img src={express} alt="express" height="100px" width="120px" />
               <br />
               <small>Express.js</small>
             </Col>
+          </Row>
+          <br/> <br/>
+          <Row data-aos="fade-left" data-aos-delay="100">
+           
             <Col>
-              <img src={firebase} alt="firebase" height="120px" width="150px" />
+              <img src={firebase} alt="firebase" height="100px" width="120px" />
               <br />
               <small>Firebase</small>
             </Col>
             <Col>
-              <img src={gatsby} alt="gatsby" height="120px" width="150px" />
+              <img src={gatsby} alt="gatsby" height="100px" width="120px" />
               <br />
               <small>Gatsby</small>
             </Col>
             <Col>
-              <img src={mongodb} alt="gatsby" height="120px" width="150px" />
+              <img src={mongodb} alt="gatsby" height="100px" width="120px" />
               <br />
               <small>MongoDB</small>
             </Col>
             <Col>
-              <img src={mysql} alt="mysql" height="120px" width="150px" />
+              <img src={mysql} alt="mysql" height="100px" width="120px" />
               <br />
               <small>MySQL</small>
             </Col>
