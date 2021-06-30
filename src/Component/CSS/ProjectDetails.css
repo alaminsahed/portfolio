@@ -1,18 +1,26 @@
-.card-info{
-    margin-top: 20px;
+.card-info {
+  margin-top: 20px;
 }
 
-.card{
-    height: 38rem;
+.card {
+  height: 35rem;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+.tech-row {
+  /* justify-content: center; */
+  padding-top: 6%;
 }
 
-.tech-row{
-    /* justify-content: center; */
-    padding-top: 6%;
-}
-
-.project-icon{
-    /* justify-content: end; */
-    margin-left: 148px;
-
+.project-icon {
+  /* justify-content: end; */
+  margin-left: 148px;
 }

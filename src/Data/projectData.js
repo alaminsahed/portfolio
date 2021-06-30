@@ -60,7 +60,7 @@ import img6 from "../image/project/t.PNG";
     id: 6,
     name: "Todo List",
     des: "Todo list",
-    stack: "React.js, CSS",
+    stack: "React.js, Redux-toolkit, CSS3, Bootstrap4",
     img:img6, 
     demo:"https://alaminsahed.github.io/Todo-with-redux-toolkit/",
     git:"https://github.com/alaminsahed/Todo-with-redux-toolkit",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Row, Container } from "react-bootstrap";
 import "./CSS/ProjectDetails.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -13,6 +13,7 @@ const PojectDetails = ({ info }) => {
 
   return (
     <div className="card-info">
+     
       <Card className="card">
         <Card.Img
           variant="top"
@@ -20,6 +21,7 @@ const PojectDetails = ({ info }) => {
           style={{ height: "20em", overflow: "hidden" }}
         />
         <Card.Body>
+        <Container>
           <Row>
             <Card.Title>
               <h4>{name}</h4>
@@ -27,14 +29,15 @@ const PojectDetails = ({ info }) => {
           </Row>
           <Row>
             <Card.Text>
-              <h6>{des}</h6>
+              {des}
             </Card.Text>
           </Row>
           <Row className="tech-row">
             <Card.Text>
-              <h8>Technology: {stack}</h8>
+              Technology: {stack}
             </Card.Text>
           </Row>
+          </Container>
         </Card.Body>
         <Card.Footer>
          <Row>
@@ -54,6 +57,7 @@ const PojectDetails = ({ info }) => {
          </Row>
         </Card.Footer>
       </Card>
+     
     </div>
   );
 };
