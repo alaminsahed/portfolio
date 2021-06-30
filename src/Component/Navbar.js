@@ -97,6 +97,18 @@ const Menubar = () => {
           >
            Blog
           </Link>
+          <Link
+            to="contact"
+            className="link-menu"
+            activeClass="active"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-95}
+          >
+           Contact
+          </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

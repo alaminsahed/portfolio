@@ -32,6 +32,7 @@ const Projects = () => {
               className="justify-content-center"
             >
               <Tab eventKey="all" title="All">
+              <Fade left>
                 <Row>
                   {data.map((info) => (
                     <Col md={4} key={info.id}>
@@ -39,9 +40,12 @@ const Projects = () => {
                     </Col>
                   ))}
                 </Row>
+                </Fade>
               </Tab>
               <Tab eventKey="frontend" title="Front-end">
+              <Fade bottom>
                 <Row>
+             
                   {data
                     .filter((info) => info.topic === "frontend")
                     .map((project) => (
@@ -49,6 +53,7 @@ const Projects = () => {
                         <ProjectDetails key={project.id} info={project} />
                       </Col>
                     ))}
+                  
                   <Col md={4}>
                     <div className="more-card">
                       <Card>
@@ -70,8 +75,10 @@ const Projects = () => {
                     </div>
                   </Col>
                 </Row>
+                </Fade>
               </Tab>
               <Tab eventKey="fullstack" title="Full-Stack">
+              <Fade right>
                 <Row>
                   {data
                     .filter((info) => info.topic === "fullstack")
@@ -101,6 +108,7 @@ const Projects = () => {
                     </div>
                   </Col>
                 </Row>
+                </Fade>
               </Tab>
             </Tabs>
           </div>
