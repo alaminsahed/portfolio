@@ -5,3 +5,14 @@
 .card{
     height: 38rem;
 }
+
+.tech-row{
+    /* justify-content: center; */
+    padding-top: 6%;
+}
+
+.project-icon{
+    /* justify-content: end; */
+    margin-left: 148px;
+
+}
