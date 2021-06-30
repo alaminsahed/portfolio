@@ -28,7 +28,7 @@ const Projects = () => {
               <Tab eventKey="all" title="All">
                 <Row>
                   {data.map((info) => (
-                  <Col md={6}>
+                  <Col md={4}>
                       <ProjectDetails key={info.id} info={info} />
                       </Col>
                   ))}
