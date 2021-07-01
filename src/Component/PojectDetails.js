@@ -14,7 +14,7 @@ const PojectDetails = ({ info }) => {
   return (
     <div className="card-info">
      
-      <Card className="card">
+      <Card className="project-card">
         <Card.Img
           variant="top"
           src={img}

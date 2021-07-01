@@ -56,7 +56,7 @@ const Projects = () => {
                   
                   <Col md={4}>
                     <div className="more-card">
-                      <Card>
+                      <Card className="card-area">
                         <Card.Body className="more-body">
                           <Card.Title>More</Card.Title>
                           <Card.Text>

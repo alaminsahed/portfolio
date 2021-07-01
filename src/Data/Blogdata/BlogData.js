@@ -12,7 +12,7 @@ const Blogdata = [{
 {
     id: 2,
     name: "Underrated hooks in react (useRef)",
-    des: "React is introduced hooks with the functional components. Hooks are very useful and developers friendly. Hooks allow us to reuse the stateful logic without changing your component hierarchy. We use some hooks in our daily development work like useState, useEffect. But we don’t use some hooks very often. useRef is one of them. We discuss about this hook in this blog.",
+    des: "React is introduced hooks with the functional components. Hooks are very useful and developers friendly. Hooks allow us to reuse the stateful logic without changing your component hierarchy. We use some hooks in our daily development work like useState, useEffect. But we don’t use some hooks very often. useRef is one of them. We discuss about this hook in this blog...",
     link:"https://alaminsahed.medium.com/underrated-hooks-in-react-useref-1c6197985cc4",
     img:img2
 }]
