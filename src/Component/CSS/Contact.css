@@ -47,3 +47,10 @@
     border: 2px solid gray;
     color: black;
 }
+
+.feedback{
+    text-align: center;
+    background: green;
+    color: white;
+}
+
