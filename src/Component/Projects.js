@@ -35,7 +35,7 @@ const Projects = () => {
               <Fade left>
                 <Row>
                   {data.map((info) => (
-                    <Col md={4} key={info.id}>
+                    <Col xs sm={12} md={4} key={info.id}>
                       <ProjectDetails info={info} />
                     </Col>
                   ))}
@@ -49,7 +49,7 @@ const Projects = () => {
                   {data
                     .filter((info) => info.topic === "frontend")
                     .map((project) => (
-                      <Col md={4} key={project.id}>
+                      <Col xs sm={12} md={4} key={project.id}>
                         <ProjectDetails key={project.id} info={project} />
                       </Col>
                     ))}
@@ -83,11 +83,11 @@ const Projects = () => {
                   {data
                     .filter((info) => info.topic === "fullstack")
                     .map((project) => (
-                      <Col md={4} key={project.id}>
+                      <Col xs sm={12} md={4} key={project.id}>
                         <ProjectDetails key={project.id} info={project} />
                       </Col>
                     ))}
-                 <Col md={4}>
+                 <Col  md={4}>
                     <div className="more-card">
                       <Card className="card-area">
                         <Card.Body className="more-body">

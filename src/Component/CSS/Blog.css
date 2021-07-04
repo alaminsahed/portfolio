@@ -13,3 +13,9 @@
 .medium-icon{
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .blog{
+        height: 150rem;
+    }
+}

@@ -1,5 +1,5 @@
 .about {
-  height: 40rem;
+  height: 100vh;
   width: 100%;
   padding-top: 80px;
 }
@@ -96,4 +96,19 @@
 .my-photo img{
    height: 70%;
    margin-top: 20px;
+   overflow: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+     .my-photo img{
+       height: 500px;
+       width: 300px;
+       
+     }
+     .about{
+       height: 140vh;
+       /* width: 300px */
+     
+     }
 }

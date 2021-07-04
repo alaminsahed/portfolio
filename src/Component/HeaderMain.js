@@ -14,7 +14,7 @@ const HeaderMain = () => {
   return (
     <div className="header" id="header">
       <Parallax
-        className="header"
+        className="header bgimg"
         blur={5}
         bgImage={banner}
         bgImageAlt="banner"

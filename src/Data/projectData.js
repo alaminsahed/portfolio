@@ -65,6 +65,7 @@ import img6 from "../image/project/t.PNG";
     demo:"https://alaminsahed.github.io/Todo-with-redux-toolkit/",
     git:"https://github.com/alaminsahed/Todo-with-redux-toolkit",
     topic: "frontend"
-}]
+}
+]
 
 export default projectData;

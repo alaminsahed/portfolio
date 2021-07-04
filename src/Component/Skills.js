@@ -38,7 +38,7 @@ const Skills = () => {
             <span className="bottom-line"></span>
           </Fade>
         </div>
-        <div className="skills stack-icon">
+        <div className="stack-icon">
           <Row  data-aos="fade-right">
             <Col>
               <FontAwesomeIcon icon={["fab", "html5"]} size="5x" />
@@ -71,7 +71,7 @@ const Skills = () => {
               <small>React.js</small>
             </Col>
             <Col>
-              <img src={redux} alt="redux" height="100px" width="120px" />
+              <img src={redux} alt="redux" height="90px" width="110px" />
               <br />
               <small>Redux</small>
             </Col>

@@ -43,3 +43,16 @@
     color: black;
 } */
 
+@media only screen and (max-width: 600px) {
+    .skills{
+        height: 70rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .skills{
+        height: 75rem;
+        padding-top: 250px;
+    }
+}
+
