@@ -13,7 +13,7 @@
    
     text-decoration-line:underline;
     text-decoration-thickness: 2px;
-    color: white !important;
+    color: black !important;
 }
 
 /* a:hover{
@@ -29,3 +29,10 @@
     height: 80px;;
 }
 
+@media only screen and (max-width: 600px) {
+   .link-menu{
+       color:black;
+       background: white;
+   }
+  
+}
