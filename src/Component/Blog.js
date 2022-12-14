@@ -1,6 +1,5 @@
 import React from "react";
 import "./CSS/Blog.css";
-import Fade from "react-reveal/Fade";
 import { Container, Row, Col, Tabs, Tab, Card } from "react-bootstrap";
 import Blogdata from "../Data/Blogdata/BlogData";
 import BlogDetails from "./BlogDetails";
@@ -16,13 +15,13 @@ const Blog = () => {
     <div className="blog" id="blog">
       <Container>
         <div className="skill-title">
-          <Fade top>
-            <h2 className="t-color">Blogs</h2>
-            <p className="skill-text">Blog helps to clear a concept</p>
-          </Fade>
-          <Fade left>
-            <span className="bottom-line"></span>
-          </Fade>
+
+          <h2 className="t-color">Blogs</h2>
+          <p className="skill-text">Blog helps to clear a concept</p>
+
+
+          <span className="bottom-line"></span>
+
         </div>
         <div className="blog-body">
           <Row>
@@ -38,7 +37,7 @@ const Blog = () => {
                     <Card.Title>More</Card.Title>
                     <Card.Text>
                       <a href="https://github.com/alaminsahed" alt="github">
-                        <FontAwesomeIcon icon={["fab", "medium"]} size="5x" className="medium-icon"/>
+                        <FontAwesomeIcon icon={["fab", "medium"]} size="5x" className="medium-icon" />
                       </a>
                     </Card.Text>
                   </Card.Body>

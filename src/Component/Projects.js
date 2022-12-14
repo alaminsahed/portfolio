@@ -1,7 +1,7 @@
 import React from "react";
 import "./CSS/Projects.css";
 import { Container, Row, Col, Tabs, Tab, Card } from "react-bootstrap";
-import Fade from "react-reveal/Fade";
+
 import data from "../Data/projectData";
 import ProjectDetails from "./PojectDetails";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -16,13 +16,12 @@ const Projects = () => {
     <div className="projects" id="projects">
       <Container>
         <div className="skill-title">
-          <Fade top>
-            <h2 className="t-color">My Portfolio</h2>
-            <p className="skill-text">Working on a Project is a great fun</p>
-          </Fade>
-          <Fade left>
-            <span className="bottom-line"></span>
-          </Fade>
+
+          <h2 className="t-color">My Portfolio</h2>
+          <p className="skill-text">Working on a Project is a great fun</p>
+
+          <span className="bottom-line"></span>
+
         </div>
         <div className="project-body">
           <div className="project-tab ">
@@ -32,7 +31,7 @@ const Projects = () => {
               className="justify-content-center"
             >
               <Tab eventKey="all" title="All">
-              <Fade left>
+
                 <Row>
                   {data.map((info) => (
                     <Col xs sm={12} md={4} key={info.id}>
@@ -40,12 +39,12 @@ const Projects = () => {
                     </Col>
                   ))}
                 </Row>
-                </Fade>
+
               </Tab>
               <Tab eventKey="frontend" title="Front-end">
-              <Fade bottom>
+
                 <Row>
-             
+
                   {data
                     .filter((info) => info.topic === "frontend")
                     .map((project) => (
@@ -53,7 +52,7 @@ const Projects = () => {
                         <ProjectDetails key={project.id} info={project} />
                       </Col>
                     ))}
-                  
+
                   <Col md={4}>
                     <div className="more-card">
                       <Card className="card-area">
@@ -75,10 +74,10 @@ const Projects = () => {
                     </div>
                   </Col>
                 </Row>
-                </Fade>
+
               </Tab>
               <Tab eventKey="fullstack" title="Full-Stack">
-              <Fade right>
+
                 <Row>
                   {data
                     .filter((info) => info.topic === "fullstack")
@@ -87,7 +86,7 @@ const Projects = () => {
                         <ProjectDetails key={project.id} info={project} />
                       </Col>
                     ))}
-                 <Col  md={4}>
+                  <Col md={4}>
                     <div className="more-card">
                       <Card className="card-area">
                         <Card.Body className="more-body">
@@ -108,7 +107,7 @@ const Projects = () => {
                     </div>
                   </Col>
                 </Row>
-                </Fade>
+
               </Tab>
             </Tabs>
           </div>
