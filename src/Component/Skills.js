@@ -12,7 +12,7 @@ import firebase from "../image/Skills/firebase.svg";
 import gatsby from "../image/Skills/gatsby.svg";
 import mongodb from "../image/Skills/mongodb.svg";
 import mysql from "../image/Skills/mysql.svg";
-import Fade from "react-reveal/Fade";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -21,25 +21,25 @@ library.add(fas, fab);
 
 const Skills = () => {
 
-    useEffect(()=>{
-        AOS.init();
-    })
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <div className="skills" id="skill">
       <Container>
         <div className="skill-title">
-          <Fade top>
-            <h2 className="t-color">My Stack</h2>
-            <p className="skill-text">
-              Always open to learn new technologies and skills
-            </p>
-          </Fade>
-          <Fade left>
-            <span className="bottom-line"></span>
-          </Fade>
+
+          <h2 className="t-color">My Stack</h2>
+          <p className="skill-text">
+            Always open to learn new technologies and skills
+          </p>
+
+
+          <span className="bottom-line"></span>
+
         </div>
         <div className="stack-icon">
-          <Row  data-aos="fade-right">
+          <Row data-aos="fade-right">
             <Col>
               <FontAwesomeIcon icon={["fab", "html5"]} size="5x" />
               <br />
@@ -65,7 +65,7 @@ const Skills = () => {
           </Row>
           <br /> <br />
           <Row>
-          <Col>
+            <Col>
               <FontAwesomeIcon icon={["fab", "react"]} size="5x" />
               <br />
               <small>React.js</small>
@@ -86,9 +86,9 @@ const Skills = () => {
               <small>Express.js</small>
             </Col>
           </Row>
-          <br/> <br/>
+          <br /> <br />
           <Row data-aos="fade-left" data-aos-delay="100">
-           
+
             <Col>
               <img src={firebase} alt="firebase" height="100px" width="120px" />
               <br />

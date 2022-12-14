@@ -1,8 +1,7 @@
 import React from "react";
 import "./CSS/Contact.css";
 // import { useForm } from "react-hook-form";
-import Fade from "react-reveal/Fade";
-import { Row, Col } from "react-bootstrap";
+
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
@@ -10,16 +9,15 @@ const Contact = () => {
   if (state.succeeded) {
     return <p className="feedback">Thank you! I will contact you soon</p>;
   }
- 
+
   return (
     <div id="contact" className="contact">
       <div className="skill-title">
-        <Fade top>
-          <h2 className="t-color">Contact</h2>
-        </Fade>
-        <Fade left>
-          <span className="bottom-line"></span>
-        </Fade>
+
+        <h2 className="t-color">Contact</h2>
+
+        <span className="bottom-line"></span>
+
       </div>
       <div className="form-group">
         <form onSubmit={handleSubmit} className="form">
@@ -28,7 +26,7 @@ const Contact = () => {
               Name
             </label>
             <br />
-            <input name="name" id="name" type="text"  className="input-field"
+            <input name="name" id="name" type="text" className="input-field"
             />
             <ValidationError
               prefix="Name"
@@ -47,7 +45,7 @@ const Contact = () => {
               type="email"
               className="input-field"
             />
-             <ValidationError
+            <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
@@ -64,7 +62,7 @@ const Contact = () => {
               type="textarea"
               className="input-field message"
             />
-             <ValidationError
+            <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
